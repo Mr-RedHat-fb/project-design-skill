@@ -1,0 +1,10 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "project-design",
+  "description": "Assembles complete planning packages for software projects: product design documents in Phase A, engineering handbook and CI/CD plan in Phase B, and ongoing revisions in Phase C.",
+  "author": {
+    "name": "Mr.RedHat",
+    "email": "mrredhat317@gmail.com",
+    "url": "https://github.com/mr-redhat-fb"
+  }
+}

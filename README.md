@@ -69,10 +69,10 @@ left to the operator if needed.
 
 ## Installation
 
-This is a Claude Skill. To install on a Claude account or Claude Code instance, copy
-the folder into your skills directory or upload the packaged `.skill` file via the
-Claude UI. See [Anthropic's skill documentation](https://docs.claude.com) for the
-current installation procedure for your environment.
+```
+/plugin marketplace add alfred-intelligence/claude-marketplace
+/plugin install project-design@alfred
+```
 
 The skill expects `present_files` to be available for delivering the generated
 package.
@@ -80,20 +80,24 @@ package.
 ## Repository layout
 
 ```
-project-design/
-├── LICENSE                                       MIT
-├── README.md                                     this file
-├── SKILL.md                                      skill manifest + body
-└── references/
-    ├── agent-instruction-patterns.md
-    ├── agent-loop-templates.md
-    ├── bootstrap-artifacts.md
-    ├── brainstorming-techniques.md
-    ├── ci-cd-templates.md
-    ├── document-templates.md
-    ├── engineering-handbook-templates.md
-    ├── exploration-map.md
-    └── silent-assessment.md
+project-design-skill/
+├── .claude-plugin/
+│   └── plugin.json
+├── skills/
+│   └── project-design/
+│       ├── SKILL.md                              skill manifest + body
+│       └── references/
+│           ├── agent-instruction-patterns.md
+│           ├── agent-loop-templates.md
+│           ├── bootstrap-artifacts.md
+│           ├── brainstorming-techniques.md
+│           ├── ci-cd-templates.md
+│           ├── document-templates.md
+│           ├── engineering-handbook-templates.md
+│           ├── exploration-map.md
+│           └── silent-assessment.md
+├── LICENSE
+└── README.md
 ```
 
 ## Contributing
